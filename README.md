@@ -9,6 +9,7 @@ This repository integrates Roo Code with the innovative SPARC Orchestration fram
 <img src="./img/modes.png" height="400">
 
 
+
 ## Installation
 ### Option 1: Using VS Code Interface
 1. In VS Code, click the mode selection menu at the bottom-left corner (default Roo Code modes include *Code*, *Architect*, *Ask*, etc.).
@@ -44,97 +45,98 @@ This repository integrates Roo Code with the innovative SPARC Orchestration fram
 3. Save your changes and restart VS Code.
 
 
+
 ## Modes
-## ⚡️ SPARC Orchestrator
+### ⚡️ SPARC Orchestrator
 **Role:** Breaks down large objectives into delegated subtasks aligned to the SPARC methodology.  
 **Focus:** Secure, modular, testable, and maintainable delivery using advanced reasoning models.
 
 ---
 
-## 📋 Specification & Pseudocode
+### 📋 Specification & Pseudocode
 **Role:** Captures the complete project context and produces a modular pseudocode blueprint with TDD anchors.  
 **Focus:** Clear, modular design; externalizes configuration; splits complex logic across modules.
 
 ---
 
-## 🏗️ Architect
+### 🏗️ Architect
 **Role:** Designs scalable, secure, and modular architectures based on requirements and pseudocode.  
 **Focus:** Detailed system diagrams, data flows, API boundaries, and service segmentation.
 
 ---
 
-## 🧠 Code
+### 🧠 Code
 **Role:** Implements robust, efficient code using externalized configurations.  
 **Focus:** Clean, modular code split into files under 500 lines, with no hard-coded secrets.
 
 ---
 
-## 🧪 TDD
+### 🧪 TDD
 **Role:** Enforces Test-Driven Development by writing failing tests first and then minimal code followed by refactoring.  
 **Focus:** Thorough test coverage, modular test files, and adherence to security practices.
 
 ---
 
-## 🪲 Debug
+### 🪲 Debug
 **Role:** Troubleshoots and resolves runtime issues using logging, tracing, and analysis tools.  
 **Focus:** Isolates and fixes bugs while keeping fixes modular and secure.
 
 ---
 
-## 🛡️ Security Reviewer
+### 🛡️ Security Reviewer
 **Role:** Audits code and architecture to identify vulnerabilities and enforce secure practices.  
 **Focus:** Detects exposed secrets, oversized files, and non-modular code, recommending necessary mitigations.
 
 ---
 
-## 📚 Documentation Writer
+### 📚 Documentation Writer
 **Role:** Produces clear, comprehensive Markdown documentation for usage, configuration, and integration.  
 **Focus:** Modular documentation (files under 500 lines) that avoids exposing sensitive data.
 
 ---
 
-## 🔗 Integrator
+### 🔗 Integrator
 **Role:** Merges outputs from all specialized modes into a cohesive final product.  
 **Focus:** Seamless integration of components ensuring modularity and adherence to security standards.
 
 ---
 
-## 📈 Post-Deployment Monitor
+### 📈 Post-Deployment Monitor
 **Role:** Monitors system performance post-deployment, collecting metrics, logs, and user feedback.  
 **Focus:** Continuous monitoring with secure, modular configurations and prompt escalation of issues.
 
 ---
 
-## 🧹 Optimizer
+### 🧹 Optimizer
 **Role:** Continuously refines and optimizes the codebase for performance, modularity, and maintainability.  
 **Focus:** Refactoring, splitting large files, and externalizing configurations to meet best practices.
 
 ---
 
-## ❓ Ask
+### ❓ Ask
 **Role:** Guides users in formulating precise, modular requests to delegate tasks to the correct specialized modes.  
 **Focus:** Providing task formulation and delegation strategies for effective inquiries.
 
 ---
 
-## 🚀 DevOps
+### 🚀 DevOps
 **Role:** Manages deployments and infrastructure operations across cloud providers, edge platforms, and internal environments.  
 **Focus:** Secure, traceable, and automated deployments using CI/CD pipelines and managed configuration with no hard-coded credentials.
 
 ---
 
-## 📘 SPARC Tutorial
+### 📘 SPARC Tutorial
 **Role:** Guides new users through the SPARC development process using structured thinking models and clear task delegation with `new_task`.  
 **Focus:** Educates on modular project setup, best practices (no hard-coded environment variables; files under 500 lines), and effective mode-to-mode handoffs with concise completions via `attempt_completion`.
 
 
 ## Implementation Instructions
-## Activation
+### Activation
 - **Activate SPARC Orchestrator:** In Roo Code, select "SPARC Orchestrator" as your primary mode.
 
 ---
 
-## Task Delegation
+### Task Delegation
 - **Use `new_task`:** Delegate tasks to specialized modes such as Specification & Pseudocode, Architect, Code, TDD, Debug, Security Review, Documentation Writer, Integrator, Post-Deployment Monitor, Optimizer, Ask, and DevOps. Use the `new_task` command with clear instructions.  
 - **Context Isolation:** Each subtask runs in its own isolated context and returns a concise summary via `attempt_completion`.  
 - **Iterative Refinement:** Modes like TDD, Debug, and Security Reviewer iterate until:
@@ -144,7 +146,7 @@ This repository integrates Roo Code with the innovative SPARC Orchestration fram
 
 ---
 
-## Final Integration & Monitoring
+### Final Integration & Monitoring
 - **Integration Mode:** Consolidates outputs from all specialized modes into a final, cohesive deliverable.  
 - **Documentation & Monitoring:**
   - Documentation Writer Mode produces detailed guides.
@@ -153,7 +155,7 @@ This repository integrates Roo Code with the innovative SPARC Orchestration fram
 
 ---
 
-## Customization Options
+### Customization Options
 - **Tool Access Restrictions:** Adjust the `groups` field for each mode to control which tools they can access (e.g., read, edit, browser, command, mcp).  
 - **Role Definitions & Custom Instructions:** Edit the `roleDefinition` and `customInstructions` fields to match your organization’s language and standards. For lengthy instructions, consider using `.clinerules-{mode-slug}` files.  
 - **API Configuration (Optional):** Add an `apiConfiguration` property to any mode for model-specific parameters (e.g., `{"model": "gpt-4", "temperature": 0.2}`).  
